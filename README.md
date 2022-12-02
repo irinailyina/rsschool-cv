@@ -1,3 +1,1 @@
-# rsschool-cv
-# rsschool-cv
-# hello
+https://irinailyina.github.io/rsschool-cv/cv
