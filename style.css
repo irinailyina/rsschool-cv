@@ -108,12 +108,12 @@ object-fit: cover;
 }
 
 .info ul{
-padding: o;
+padding: 5px;
 margin: 0;
 list-style: none;
 text-align: right;
 line-height: 30px;
-background: linear-gradient(to left, transparent, rgb(111, 136, 180));
+background: linear-gradient(to left, transparent, rgb(223 234 253));
 }
 
 .summary{
