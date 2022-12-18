@@ -1,11 +1,46 @@
-.header {
-position: absolute;
-width: 1440px;
-height: 134px;
-left: 0px;
-top: 0px;
-background: #b0d5a9;
+@font-face {
+    font-family: "Inika"; 
+    src: url("./assets/fonts/Inika/Inika-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+body {
+    margin: 0px;
+    padding: 0px;
 }
-.header ul {
+.header {
+    display: flex;
+    width: 100%;
+    height: 134px;
+    background: #EDF2EC;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img{
+    width: 79px;
+    height: 21px;
+    margin-left: 10%;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline;
+    padding: 20px;
+}
+
+.menu ul li a{
     text-decoration: none;
+    color: #010201;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.menu ul li a:hover,
+.menu ul li a:focus  {
+    color: #E06733;
 }
