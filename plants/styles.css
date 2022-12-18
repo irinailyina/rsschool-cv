@@ -1,0 +1,11 @@
+.header {
+position: absolute;
+width: 1440px;
+height: 134px;
+left: 0px;
+top: 0px;
+background: #b0d5a9;
+}
+.header ul {
+    text-decoration: none;
+}
