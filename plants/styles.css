@@ -1,20 +1,7 @@
-@font-face {
-    font-family: "Inika"; 
-    src: url("./assets/fonts/Inika/Inika-Regular.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-} 
-
-@font-face {
-    font-family: "Inter"; 
-    src: url("./assets/fonts/Inter/static/Inter-Regular.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-} 
-
 body {
     margin: 0px;
     padding: 0px;
+    
 }
 .header {
     padding: 0px 110px;
@@ -75,12 +62,35 @@ body {
 }
 
 .welcome h1{
-width: 549px;
-height: 101px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 45px;
-line-height: 50px;
-font-family: 'Inter-Regular';
+    width: 549px;
+    height: 101px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    font-family: 'Inter-Regular';
+}
+
+.welcome_container{
+    width: 549px;
+    height: 340px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 666px;
+    background: #FFFFFF;
+}
+
+.service{
+    height: 1300px;
+    background: #EDF2EC;
+}
+.service_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
