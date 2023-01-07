@@ -1,0 +1,215 @@
+
+body {
+    background-color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.main {
+    padding: 50px;
+    box-shadow: 0 10px 50px #858585;
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+.cv_container {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 35% 60%;
+    column-gap: 5%;
+    row-gap: 30px;
+
+}
+
+.photo img{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.photo{
+    display: flex;
+    justify-content: end;
+}
+
+.name{
+    padding-left: 30px;
+    border-left: 1px solid #000;
+}
+
+.name h1{
+    font-weight: 300;
+    font-size: xxx-large;
+    margin: 0 0 5px;
+}
+
+.name .specialize{
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.name .contact{
+    padding: 0;
+    list-style: none;
+}
+
+.name .contact img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: small;
+    margin-right: 20px;
+}
+.linkedin {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    border-radius: 20%;
+}
+.gmail {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+.git {
+    background-size: 20px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.location {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+.edu {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    
+}
+.name .contact li{
+    display: flex;
+    padding: 5px 0;
+    transform: translate(-40px);
+    background-color: #ffffff;
+}
+.contact a {
+    text-decoration: none;
+    color: #4a5aa9;
+}
+
+.info ul{
+padding: 5px;
+margin: 0;
+list-style: none;
+text-align: right;
+line-height: 30px;
+background: linear-gradient(to left, transparent, rgb(223 234 253));
+}
+
+.summary{
+    padding-left: 30px;
+    border-left: 1px solid #000;
+    text-align: justify;
+}
+
+h2{
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.experience{
+text-align: right;
+}
+
+.experience h4{
+    margin: 20px 0 10px;
+}
+
+.skills{
+    margin-top: 50px;
+    text-align: right;
+    
+}
+.skills ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 25px;
+    text-align: right;
+}
+.experience ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 35px;
+}
+
+.lang{
+    margin-top: 50px;
+    text-align: right;
+}
+.lang ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 25px;
+    text-align: right;
+}
+
+.courses{
+    padding-left: 30px;
+    border-left: 1px solid #000;
+    text-align: justify;
+}
+
+h2{
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.code {
+    padding: 50px;
+    padding-left: 30px;
+    border-left: 1px solid #000;
+    text-align: justify;
+    background: linear-gradient(to right, transparent, rgb(111, 136, 180));
+}
+
+.projects {
+    padding: 50px;
+    padding-left: 30px;
+    border-left: 1px solid #000;
+    text-align: justify;
+}
+
+
+.footer-container {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.footer a{
+        text-decoration: none;
+        color: #4a5aa9;
+    }
+.rss_logo {
+        width: 110px;
+        height: 40px;
+        background-image: url(./assets/rs_school_js.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }    
