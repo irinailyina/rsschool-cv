@@ -55,6 +55,7 @@ header, footer, section {
 .menu ul li a:hover,
 .menu ul li a:focus  {
     color: #E06733;
+    transition: 0.5s;
 }
 
 .welcome {
@@ -133,6 +134,7 @@ header, footer, section {
     font-size: 40px;
     line-height: 52px;
     color: #E06733;
+    margin-top: 100px;
 }
 
 .about p{
