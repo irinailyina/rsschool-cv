@@ -7,9 +7,6 @@
     border: 0;
   }
   
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
   
   :focus, :active {
     outline: none;
@@ -274,7 +271,7 @@ height: 479px;
     font-style: normal; 
 }
 
-.prices p, h2{
+.prices h2{
     font-weight: 700;
     font-size: 40px; 
     line-height: 50px; 
@@ -319,13 +316,13 @@ summary::-webkit-details-marker {
     margin-bottom: 0;
   }
   @media screen and (max-width: 380px) {
-    .slidedown__item {
+    .slidedown_item {
       margin-bottom: 13px;
     }
   }
   
   .slidedown_item[open] .slidedown_title::after {
-    content: url(../assets/icons/accordion-btn-dark.svg);
+    content: url(../assets/);
     transform: translateY(-50%) rotate(180deg);
   }
   
@@ -351,14 +348,14 @@ summary::-webkit-details-marker {
   }
   .slidedown_title::after {
     display: block;
-    content: url(../assets/icons/accordion-btn.svg);
+    content: url(assets/accordion-btn.svg);
     position: absolute;
     right: 40px;
     top: 55%;
     transform: translateY(-50%);
   }
   @media screen and (max-width: 380px) {
-    .accordion__title {
+    .slidedown_title {
       font-size: 1.5rem;
       font-style: normal;
       font-weight: 700;
@@ -392,6 +389,12 @@ summary::-webkit-details-marker {
   
   .slidedown_description {
     margin-bottom: 6px;
+    color: #717171;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1rem;
+    font-family: "Inter", Verdana, sans-serif;
   }
   
   .slidedown_price {
@@ -492,6 +495,49 @@ summary::-webkit-details-marker {
       margin-bottom: 0;
     }
   }
+  .info_title {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5rem;
+    color: #000000;
+    max-width: 452px;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    .info_title {
+      font-size: 2.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 3.5rem;
+      max-width: 296px;
+      padding-top: 100px;
+      margin-bottom: 25px;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    .info_title {
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 3.5rem;
+      padding-top: 19px;
+      max-width: 230px;
+      margin-bottom: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 380px) {
+    .slidedown_item {
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 380px) {
+    .prices_img {
+      display: none;
+    }
+  }
 .contact_us{
     width: 162px;
     height: 50px;
@@ -544,6 +590,23 @@ summary::-webkit-details-marker {
     align-items: center;
     justify-content: space-around;
 
+}
+.slidedown_body > .button_accordion {
+    margin-top: 12px;
+}
+.button_slidedown {
+    color: #717171;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+    padding: 3px 20px;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.button {
+    cursor: pointer;
 }
 .contacts{
     position: relative;
