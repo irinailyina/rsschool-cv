@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  :focus, :active {
+    outline: none;
+  }
+  
+  a:focus, a:active {
+    outline: none;
+  }
+  
+  nav, footer, header, aside {
+    display: block;
+  }
+  
 html {
     scroll-behavior: smooth; 
   }
@@ -8,6 +31,10 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Inika', normal;
+    height: 100%;
+    width: 100%;
+    font-size: inherit;
+    line-height: 1;
 }
 
 header, footer, section {
@@ -19,6 +46,7 @@ header, footer, section {
 .header {
     height: 134px;
     background: #EDF2EC;
+    
 }
 
 .header_container {
