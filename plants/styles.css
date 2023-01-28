@@ -22,7 +22,7 @@
   nav, footer, header, aside {
     display: block;
   }
-  
+
 html {
     scroll-behavior: smooth; 
   }
@@ -282,20 +282,216 @@ height: 479px;
 .prices h2{
     line-height: 48px; 
 }
-.prices_container{
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.slidedown_wrapper {
+  max-width: 332px;
+  max-height: 406px;
+  overflow: hidden;
+  padding: 32px 41px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+}
+@media screen and (max-width: 380px) {
+    .slidedown_wrapper {
+      max-width: 224px;
+      padding: 29px 22px;
+    }
+  }
+  
+  .slidedown {
+    max-width: 250px;
+  }
+  
+  .slidedown_item {
+    background-color: #D6E7D2;
+    border-radius: 20px;
+    margin-bottom: 32px;
+    overflow: hidden;
+  }
+  .slidedown_item:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 380px) {
+    .slidedown__item {
+      margin-bottom: 13px;
+    }
+  }
+  
+  .slidedown_item[open] .slidedown_title::after {
+    content: url(../assets/icons/accordion-btn-dark.svg);
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
+  .slidedown_item[open] .slidedown_title {
+    background-color: #D6E7D2;
+    padding: 16px 120px 9px 40px;
+  }
+  
+  .slidedown_title {
+    width: 100%;
+    background-color: #EDF2EC;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+    color: #000000;
+    padding: 17px 120px 15px 40px;
+    cursor: pointer;
+    position: relative;
+  }
+  .slidedown_title:hover {
+    background-color: #D6E7D2;
+  }
+  .slidedown_title::after {
+    display: block;
+    content: url(../assets/icons/accordion-btn.svg);
+    position: absolute;
+    right: 40px;
+    top: 55%;
+    transform: translateY(-50%);
+  }
+  @media screen and (max-width: 380px) {
+    .accordion__title {
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2rem;
+      padding: 15px 80px 15px 30px;
+    }
+  }
+  
+  .slidedown_body {
+    color: #717171;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1rem;
+    padding: 6px 40px 12px 41px;
+    position: relative;
+  }
+  .slidedown_body::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 40px;
+    max-width: 164px;
+    width: 100%;
+    border-bottom: 0.5px solid #AEA1A1;
+  }
+  .slidedown_body > .button_slidedown {
+    margin-top: 12px;
+  }
+  
+  .slidedown_description {
+    margin-bottom: 6px;
+  }
+  
+  .slidedown_price {
+    color: #E06733;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+  
+  .slidedown_hour {
+    color: #000000;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  .prices {
+    padding-top: 38px;
+  }
+  @media screen and (max-width: 768px) {
+    .prices {
+      padding-top: 40px;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    .prices {
+      padding-top: 25px;
+    }
+  }
+  
+  .prices_wrapper {
     display: flex;
     justify-content: space-between;
-}
-.prices_right{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
+  }
 
-.prices_right img{
-    margin-top: 25px;
-}
-
+  .prices_title {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.8rem;
+    color: #000000;
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: 768px) {
+    .prices_title {
+      padding-left: 14px;
+      font-size: 3.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 4.2rem;
+      margin-bottom: 55px;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    .prices_title {
+      font-size: 2.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 3.5rem;
+      padding-left: 0;
+      text-align: center;
+      margin-bottom: 33px;
+    }
+  }
+  
+  .prices_info {
+    text-align: right;
+    padding-bottom: 115px;
+  }
+  @media screen and (max-width: 768px) {
+    .prices_info {
+      padding-bottom: 88px;
+    }
+  }
+  .prices_info > .button_service {
+    padding: 12px 33px;
+    margin-right: 0;
+    margin-bottom: 35px;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.6rem;
+  }
+  @media screen and (max-width: 380px) {
+    .prices__info {
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+    .prices_info > .button_service {
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2rem;
+      padding: 8px 23px;
+      margin-bottom: 0;
+    }
+  }
 .contact_us{
     width: 162px;
     height: 50px;
