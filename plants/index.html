@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plants</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src= "index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +22,7 @@
             <img src="./assets/logo.png" alt="Logo">
             <nav class="menu">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="#Home">Home</a></li>
                     <li><a href="#About">About us</a></li>
                     <li><a href="#Service">Service</a></li>
                     <li><a href="#Price">Price</a></li>
@@ -31,7 +32,7 @@
         </div>
     </header>
     <main>
-        <section class="welcome">
+        <section id="Home" class="welcome">
             <div><img src="./assets/leafs.png" alt="leafs"></div>
             <div class="welcome_container">
                 <h1>We grow <span class="colortext">plants</span> and give you oxygen</h1>
@@ -111,32 +112,51 @@
                 </div>
             </div>
         </section>
-        <section id="Price" class="prices">
-            <div class="prices_container">
-                <div class="prices__left">
-                    <h2>Prices</h2>
-                    <div class="prices_border">
-                        <div class="prices_item item1">
-                            <span>Basics</span>
-                            <img src="./assets/accordion_btn.png" alt="accordion_btn">
-                        </div>
-                        <div class="prices_item">
-                            <span>Standard</span>
-                            <img src="./assets/accordion_btn.png" alt="accordion_btn">
-                        </div>
-                        <div class="prices_item">
-                            <span>Pro care</span>
-                            <img src="./assets/accordion_btn.png" alt="accordion_btn">
-                        </div>
-                    </div>
+
+        <section class="prices" id="section-prices">
+            <div class="wrapper prices_wrapper">
+              <div class="prices_menu">
+                <h2>Prices</h2>
+                <div class="slidedown_wrapper">
+                  <div class="slidedown">
+                    <details class="slidedown_item">
+                      <summary class="slidedown_title">Basics</summary>
+                      <div class="slidedown_body">
+                        <p class="slidedown_description">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>  
+                        <p><span class="slidedown_price">$15 </span><span class="slidedown_hour">/ per hour</span></p>
+                        <button class="button button_slidedown">Order</button> 
+                      </div>
+                    </details>
+                    <details class="slidedown_item">
+                      <summary class="slidedown_title">Standard</summary>
+                      <div class="slidedown_body">
+                        <p class="slidedown_description">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>  
+                        <p><span class="slidedown_price">$25 </span><span class="slidedown_hour">/ per hour</span></p>
+                        <button class="button button_slidedown">Order</button> 
+                      </div>
+                    </details>
+                    <details class="slidedown_item">
+                      <summary class="slidedown_title">Pro care</summary>
+                      <div class="slidedown_body">
+                        <p class="slidedown_description">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>  
+                        <p><span class="slidedown_price">$35 </span><span class="slidedown_hour">/ per hour</span></p>
+                        <button class="button button_slidedown">Order</button> 
+                      </div>
+                    </details>
+                  </div>
                 </div>
-                <div class="prices_right">
-                    <p>Our best <span class="colortext">gardeners</span> are<br> ready to help you</p>
-                    <button class="contact_us">Contact us</button>
-                    <div><img src="./assets/leafssmall.png" alt="leafes small"></div>
+              </div>
+              <div class="prices__info">
+                <p class="info__title">Our best <span class="colortext">gardeners</span> are ready to help you</p>
+                <button class="contact_us">Contact us</button>
+                <div class="prices__img">
+                  <img src="assets/leafssmall.png" alt="small leafs">
                 </div>
+              </div>
             </div>
-        </section>
+          </section>
+
+
         <section id="Contacts" class="contacts">
             <div>
                 <h2>Contact us</h2>
